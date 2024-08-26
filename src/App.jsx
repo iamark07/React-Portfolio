@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from './web-components/Header.jsx'
+import React from 'react';
+import Background from './web-components/Background';
 
 
 function App() {
   return (
-    <Header />
+    <Background />
   )
 }
 
