@@ -28,7 +28,7 @@ function Header() {
       <div className="page_mode_wrapper flex gap-3 items-center">
         <IoSunnyOutline color="white" size={"18px"} />
         <div className="page_mode w-12 h-6 rounded-full bg-white p-1 cursor-pointer">
-          <div className="mode_bar w-4 h-4 rounded-full bg-green-500"></div>
+          <div className="mode_bar w-4 h-4 rounded-full bg-blue-400"></div>
         </div>
         <IoMoonOutline color="white" size={"18px"} />
       </div>
