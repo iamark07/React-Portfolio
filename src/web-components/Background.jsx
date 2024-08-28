@@ -6,7 +6,7 @@ import Main_content from './Web_sections/Main_content';
 
 function Background() {
   return (
-    <div className="page_bg w-100">
+    <div className="page_bg w-100 bg-gradient-to-l from-indigo-950 to-black">
         <Header />
         <Hero_section/>
         <Main_content />
