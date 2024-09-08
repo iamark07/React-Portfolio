@@ -1,12 +1,13 @@
 import React from "react";
 import Btn from "./Btn_component/Btn";
 import Social_Media from "./Social_icon_component/Social_Media";
+import Section_list from "./Section_List/Section_list";
 
 function Hero_section() {
   return (
     <section className="hero_section grid lg:grid-cols-5 px-5 lg:px-10 py-20 lg:justify-center items-center">
       <div className="hero_text_wrapper lg:col-span-3">
-        <h4 className="p-3 md:px-4 md:py-3 text-sm md:text-md bg-gray-600 text-white rounded-sm w-fit">Arbaz Karimi</h4>
+        <Section_list title = "Arbaz Karimi"/>
         <h2 className="text-white mt-5 mb-2 xl:my-5 text-2xl sm:text-3xl xl:text-5xl">HEY! I'M ARBAZ </h2>
         <h2 className="text-blue-400 mb-2 xl:my-5 text-2xl sm:text-3xl xl:text-5xl">
           I'M FRONTEND DEVELOPER{" "}
@@ -16,7 +17,7 @@ function Hero_section() {
           non, eius labore hic aperiam error?
         </p>
         <Social_Media />
-        <Btn />
+        <Btn btn= {"Get In Touch"}/>
       </div>
       <div className="hero_img lg:col-span-2 hidden lg:block rounded-full overflow-hidden">
         <img
