@@ -37,8 +37,8 @@ function Header() {
             <li key={links} className="flex items-center gap-2">
               <a
                 href="#"
-                className={`text-white hover:text-blue-500 transition-all duration-300 ${
-                  activeLink === links ? "text-blue-500 " : ""
+                className={` hover:text-blue-500 transition-all duration-300 ${
+                  activeLink === links ? "text-blue-500 " : "text-white"
                 }`}
                 onClick={() => handleActiveLink(links)} // Set the active link on click
               >
@@ -60,7 +60,7 @@ function Header() {
       </div>
       {/* menu slider */}
       <div
-        className={`menu_slider_section flex md:hidden fixed top-0 transition-all duration-500 w-full ${
+        className={`menu_slider_section flex md:hidden fixed z-50 top-0 transition-all duration-500 w-full ${
           menu_slider ? "left-0" : "-left-full"
         }`}
       >
@@ -74,8 +74,8 @@ function Header() {
                 <li key={links} className="flex items-center gap-2">
                   <a
                     href="#"
-                    className={`text-white text-lg flex gap-3 items-center ${
-                      activeLink === links ? "font-bold underline" : ""
+                    className={` text-lg flex gap-3 items-center hover:text-blue-500 transition-all duration-300 ${
+                      activeLink === links ? "text-blue-500 " : "text-white"
                     }`}
                     onClick={() => handleActiveLink(links)} // Set the active link on click
                   >

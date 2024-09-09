@@ -1,12 +1,16 @@
 import React from 'react';
 import About_section from './Main_content_component/About_section';
+import Projects_section from './Main_content_component/Projects_section';
 
 // import Content_box from './Content_box/Content_box'
 
 function Main_content() {
 
   return (
-    <About_section/>
+    <>
+      <About_section/>
+      <Projects_section/>
+    </>
   )
   // let contents = [
   //   {
