@@ -10,10 +10,10 @@ function Projects_detail({ project, onClose, isVisible }) {
       }`}
     >
       <div className="projects_detail_wrapper bg-white grid grid-cols-7 gap-5 h-full">
-        <div className="project_img col-span-4 h-full">
+        <div className="project_img col-span-7 lg:col-span-4 h-full">
           <img src={project?.pro_img} className="h-full object-cover" alt="" />
         </div>
-        <div className="projects_detail_items col-span-3 py-5 pe-5 relative">
+        <div className="projects_detail_items col-span-7 lg:col-span-3 py-5 pe-5 relative">
           <h2 className="text-3xl border-b text-blue-500 border-solid border-gray-400 pb-3">
             {project?.pro_title}
           </h2>

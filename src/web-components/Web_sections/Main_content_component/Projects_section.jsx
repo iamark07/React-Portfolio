@@ -4,19 +4,20 @@ import Section_list from "../Section_List/Section_list";
 import Projects_Components from "./Projects_Components/Projects";
 import Projects_detail from "./Projects_Components/Projects_detail_component/Projects_detail";
 import Projects_full_img from "./Projects_Components/Projects_full_img/Projects_full_img";
-import "./Projects_section.css" 
+import "./Projects_section.css";
 
 function Projects_section() {
-  const [selectedProject, setSelectedProject] = useState(null); 
-  const [isDetailVisible, setIsDetailVisible] = useState(false); 
-  const [is_img_Visible, set_is_img_Visible] = useState(false); 
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isDetailVisible, setIsDetailVisible] = useState(false);
+  const [is_img_Visible, set_is_img_Visible] = useState(false);
 
   const projectsData = [
     {
       pro_img: "src/assets/img/projects-img/restuarent-website.png",
       pro_title: "Restaurant Website",
       pro_detail: "Frontend Website",
-      description:"I created a modern restaurant frontend website using HTML, CSS, and JavaScript. The site features an elegant design, responsive layout, and interactive elements such as image sliders and smooth scrolling. The menu, contact form, and location map are designed to enhance user experience and showcase the restaurant's offerings.",
+      description:
+        "I created a modern restaurant frontend website using HTML, CSS, and JavaScript. The site features an elegant design, responsive layout, and interactive elements such as image sliders and smooth scrolling. The menu, contact form, and location map are designed to enhance user experience and showcase the restaurant's offerings.",
       type: "Frontend Website",
       languages: "HTML, CSS, JS",
       country: "India",
@@ -49,7 +50,7 @@ function Projects_section() {
       pro_title: "Append Website",
       pro_detail: "Frontend Website",
       description:
-      "I built a professional portfolio website using HTML, CSS, Bootstrap, and JavaScript. The site showcases my skills, projects, and experience through a clean, responsive design. Bootstrap ensured quick and efficient layout creation, while JavaScript added interactivity, such as smooth navigation and dynamic project displays, enhancing the overall user experience.",
+        "I built a professional portfolio website using HTML, CSS, Bootstrap, and JavaScript. The site showcases my skills, projects, and experience through a clean, responsive design. Bootstrap ensured quick and efficient layout creation, while JavaScript added interactivity, such as smooth navigation and dynamic project displays, enhancing the overall user experience.",
       type: "Frontend Website",
       languages: "HTML, CSS, Bootstrap 5, JS",
       country: "India",
@@ -130,6 +131,8 @@ function Projects_section() {
     speed: 550,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Enable auto slide
+    autoplaySpeed: 5000, // Time between auto slides (3000ms = 3 seconds)
     responsive: [
       {
         breakpoint: 1024,
@@ -151,21 +154,21 @@ function Projects_section() {
   };
 
   const handleProjectClick = (project) => {
-    setSelectedProject(project); 
-    setIsDetailVisible(true); 
+    setSelectedProject(project);
+    setIsDetailVisible(true);
   };
 
   const project_img_Click = (project) => {
     setSelectedProject(project);
-    set_is_img_Visible(true); 
+    set_is_img_Visible(true);
   };
 
   const closeProjectDetail = () => {
-    setIsDetailVisible(false); 
+    setIsDetailVisible(false);
   };
 
   const on_img_Close = () => {
-    set_is_img_Visible(false); 
+    set_is_img_Visible(false);
   };
 
   return (
@@ -174,7 +177,7 @@ function Projects_section() {
       <h2 className="text-neutral-300 text-2xl md:text-4xl mt-5 md:mt-7">
         Recent Projects
       </h2>
-      
+
       {/* React Slick Carousel */}
       <Slider {...settings} className="projects_container mt-10">
         {projectsData.map((project, index) => (
