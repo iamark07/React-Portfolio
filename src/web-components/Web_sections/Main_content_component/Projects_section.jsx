@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import Section_list from "../Section_List/Section_list";
+import Section_title from "../Section_title/Section_title";
+import Section_title_desc from "../Section_title_desc/Section_title_desc";
 import Projects_Components from "./Projects_Components/Projects";
 import Projects_detail from "./Projects_Components/Projects_detail_component/Projects_detail";
 import Projects_full_img from "./Projects_Components/Projects_full_img/Projects_full_img";
@@ -173,10 +174,8 @@ function Projects_section() {
 
   return (
     <section className="Projects_section py-20 px-5 md:px-10 w-100 bg-gradient-to-l from-indigo-950 to-teal-950">
-      <Section_list title={"My Projects"} />
-      <h2 className="text-neutral-300 text-2xl md:text-4xl mt-5 md:mt-7">
-        Recent Projects
-      </h2>
+      <Section_title title={"My Projects"} />
+      <Section_title_desc title_desc= {"Recent Projects"}/>
 
       {/* React Slick Carousel */}
       <Slider {...settings} className="projects_container mt-10">

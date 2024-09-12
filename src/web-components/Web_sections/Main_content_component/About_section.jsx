@@ -1,5 +1,5 @@
 import React from "react";
-import Section_list from "../Section_List/Section_list";
+import Section_title from "../Section_title/Section_title";
 import About_reviews_box from "./About_reviews/About_reviews_box";
 import Btn from "../Btn_component/Btn";
 
@@ -12,7 +12,7 @@ function About_section() {
         </div>
 
         <div className="about_content_container col-span-8 xl:col-span-4">
-          <Section_list title="About Section" />
+          <Section_title title="About Section" />
           <h2 className="mt-5 text-white text-2xl md:text-4xl">
             I'M AVAILABLE FOR{" "}
             <span className="text-blue-400">FRONTEND DESIGN</span> PROJECTS
