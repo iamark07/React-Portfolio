@@ -1,0 +1,16 @@
+.project_desc::-webkit-scrollbar{
+    display: none;
+}
+
+/* @media screen and (min-width:550px) and (max-width:639px) {
+    .project_desc{
+    max-height: calc(100dvh - 485px) !important;
+}
+} */
+
+/* This will prevent body scrolling while the modal is open */
+body.no-scroll {
+    overflow: hidden;
+  }
+  
+  
