@@ -4,7 +4,7 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 function Projects_detail_btn({ onClick }) {
   return (
     <IoArrowForwardCircle
-      className="text-blue-500 hover:text-black transition-all duration-300 text-5xl cursor-pointer"
+      className="animate-move2 text-blue-500 hover:text-black transition-all duration-300 text-5xl cursor-pointer"
       onClick={onClick} // Attach the onClick handler here
     />
   );

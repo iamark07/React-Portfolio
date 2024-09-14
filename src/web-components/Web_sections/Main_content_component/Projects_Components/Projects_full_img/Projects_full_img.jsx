@@ -4,7 +4,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 function Projects_full_img({ img_Visible, img_Close, project }) {
   return (
     <div
-      className={`project_full_img_container fixed top-0 left-0 p-5 md:p-8 backdrop-blur-md items-center bg-[rgba(0,0,0,.5)] w-full justify-center ${
+      className={`project_full_img_container z-50 fixed top-0 left-0 p-5 md:p-8 backdrop-blur-md items-center bg-[rgba(0,0,0,.5)] w-full justify-center ${
         img_Visible ? "flex" : "hidden"
       }`} style={{ height: "100dvh" }}
     >

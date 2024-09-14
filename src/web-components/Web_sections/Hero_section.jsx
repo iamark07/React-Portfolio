@@ -12,12 +12,15 @@ function Hero_section() {
         <h2 className="text-blue-400 mb-2 xl:my-5 text-2xl sm:text-3xl xl:text-5xl">
           I'M FRONTEND DEVELOPER{" "}
         </h2>
-        <p className="text-white mt-3 mb-5 xl:my-5 text-sm md:text-md">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-          non, eius labore hic aperiam error?
+        <p className="text-white mt-3 mb-5 xl:my-5 text-sm md:text-lg">
+          Creating responsive and visually stunning websites that turn ideas into exceptional user experiences.
         </p>
         <Social_Media />
-        <Btn btn= {"Get In Touch"}/>
+        <div className="hero_btn flex gap-3">
+          <Btn btn= {"Get In Touch"}/>
+          <Btn btn={"Resume"}/>
+        </div>
+
       </div>
       <div className="hero_img lg:col-span-2 hidden lg:block rounded-full overflow-hidden">
         <img

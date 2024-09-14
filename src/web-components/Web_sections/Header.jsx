@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // import icons
 import { IoSunnyOutline } from "react-icons/io5";
@@ -8,13 +8,20 @@ import { IoIosHome } from "react-icons/io";
 import { FaUsers } from "react-icons/fa6";
 import { MdHomeRepairService } from "react-icons/md";
 import { FaBlog } from "react-icons/fa6";
+import Btn from "./Btn_component/Btn";
 
 function Header() {
   const [menu_slider, set_menu_slider] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const nav = ["Home", "About", "Service", "Blog"];
-  const nav_icon = [<IoIosHome />, <FaUsers />, <MdHomeRepairService />, <FaBlog />];
+  const nav_icon = [
+    <IoIosHome />,
+    <FaUsers />,
+    <MdHomeRepairService />,
+    <FaBlog />,
+  ];
 
   // Function to toggle menu slider
   const toggleMenuSlider = () => {
@@ -26,8 +33,30 @@ function Header() {
     setActiveLink(link);
   };
 
+  // Handle scroll to apply background color
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="relative border-b border-solid border-gray-800 w-full flex justify-between items-center px-5 py-5 lg:px-10">
+    <header
+      className={`sticky top-0 z-40 w-full flex justify-between items-center px-5 py-5 lg:px-10 border-b border-solid backdrop-blur-xl bg-opacity-80 border-gray-800 transition-all duration-300 ${
+        isScrolled ? "bg-gray-800" : "bg-transparent"
+      }`}
+    >
       <div className="logo">
         <img src="src/assets/img/logo.png" alt="" className="w-32 md:w-40" />
       </div>

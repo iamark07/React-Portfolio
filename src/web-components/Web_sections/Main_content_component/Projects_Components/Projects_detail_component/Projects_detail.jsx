@@ -21,7 +21,7 @@ function Projects_detail({ project, onClose, isVisible }) {
 
   return (
     <div
-      className={`Projects_detail_container fixed top-0 left-0 p-5 md:p-8 backdrop-blur-md items-center bg-[rgba(0,0,0,.5)] h-full w-full justify-center ${
+      className={`Projects_detail_container z-50 fixed top-0 left-0 p-5 md:p-8 backdrop-blur-md items-center bg-[rgba(0,0,0,.5)] h-full w-full justify-center ${
         isVisible ? "flex" : "hidden"
       }`}
     >
