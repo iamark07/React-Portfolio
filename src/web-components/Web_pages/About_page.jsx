@@ -9,12 +9,12 @@ import Skill_section from '../Web_sections/Main_content_component/Skill_section'
 function About_page() {
   return (
     <>
-        <Header/>
+        {/* <Header/> */}
         <About_section/>
         <Projects_section/>
         <Experience_section/>
         <Skill_section/>
-        <Footer/>
+        {/* <Footer/> */}
     </>
   )
 }

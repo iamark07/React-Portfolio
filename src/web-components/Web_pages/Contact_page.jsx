@@ -6,9 +6,9 @@ import Footer from '../Web_sections/Footer'
 function Contact_page() {
   return (
     <>
-        <Header />
+        {/* <Header /> */}
         <Contact_section/>
-        <Footer/>
+        {/* <Footer/> */}
     </>
   )
 }
