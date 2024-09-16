@@ -17,8 +17,9 @@ function Hero_section() {
         </p>
         <Social_Media />
         <div className="hero_btn flex gap-3">
-          <Btn btn= {"Get In Touch"}/>
-          <Btn btn={"Resume"}/>
+          <Btn btn= {"Get In Touch"} link="/Contact"/>
+          <a href="src/assets/resume/Arbaz-Karimi-resume.pdf" target="_blank" className="my-5">
+            <button className="w-32 md:w-40 text-md text-white py-3 px-5 border border-solid border-blue-500 transition-all duration-300 hover:bg-transparent bg-blue-500 rounded-sm">Resume</button></a>
         </div>
 
       </div>

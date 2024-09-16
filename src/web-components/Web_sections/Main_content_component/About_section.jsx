@@ -25,7 +25,7 @@ function About_section() {
             <About_reviews_box review= {"10 Or More Projects"} time ={"Projects"}/>
             <About_reviews_box review= {"Modern Websits"} time ={"Good Skills"}/>
           </div>
-          <Btn btn= {"Get In Touch"} class_name={"mt-5"}/>
+          <Btn btn= {"Get In Touch"} class_name={"mt-5"} link="/Contact"/>
         </div>
       </div>
     </section>
