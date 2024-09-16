@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";  // Import Link from react-router-dom
+import { Link, useLocation } from "react-router-dom";  // Import useLocation from react-router-dom
 
 // import icons
 import { IoSunnyOutline } from "react-icons/io5";
@@ -9,13 +9,14 @@ import { IoIosHome } from "react-icons/io";
 import { FaUsers } from "react-icons/fa6";
 import { MdHomeRepairService } from "react-icons/md";
 import { FaBlog } from "react-icons/fa6";
-// import Btn from "./Btn_component/Btn";
 
 function Header() {
   const [menu_slider, set_menu_slider] = useState(false);
-  const [activeLink, setActiveLink] = useState("Home");
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const location = useLocation();  // Use useLocation to get the current location
+
+  // Define navigation links and icons
   const nav = ["Home", "About", "Contact", "Blog"];
   const nav_links = ["/", "/About", "/Contact", "/Blog"];  // Define paths for each link
   const nav_icon = [
@@ -25,14 +26,17 @@ function Header() {
     <FaBlog />,
   ];
 
+  // Determine the active link based on the current location
+  const currentPath = location.pathname;
+  const [activeLink, setActiveLink] = useState(currentPath);
+
+  useEffect(() => {
+    setActiveLink(currentPath);
+  }, [currentPath]);
+
   // Function to toggle menu slider
   const toggleMenuSlider = () => {
     set_menu_slider(!menu_slider);
-  };
-
-  // Function to handle active link
-  const handleActiveLink = (link) => {
-    setActiveLink(link);
   };
 
   // Handle scroll to apply background color
@@ -70,9 +74,8 @@ function Header() {
                 <Link
                   to={nav_links[index]}  // Use Link for routing
                   className={`hover:text-blue-500 transition-all duration-300 ${
-                    activeLink === links ? "text-blue-500" : "text-white"
+                    activeLink === nav_links[index] ? "text-blue-500" : "text-white"
                   }`}
-                  onClick={() => handleActiveLink(links)}  // Set the active link on click
                 >
                   {links}
                 </Link>
@@ -109,9 +112,8 @@ function Header() {
                   <Link
                     to={nav_links[index]}  // Use Link for routing
                     className={`text-lg flex gap-3 items-center hover:text-blue-500 transition-all duration-300 ${
-                      activeLink === links ? "text-blue-500" : "text-white"
+                      activeLink === nav_links[index] ? "text-blue-500" : "text-white"
                     }`}
-                    onClick={() => handleActiveLink(links)}  // Set the active link on click
                   >
                     {nav_icon[index]} {/* Display the corresponding icon */}
                     {links}

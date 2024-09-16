@@ -55,7 +55,7 @@ function Contact_section() {
   };
 
   return (
-    <section className="contact_section m-auto mt-20 p-5 md:p-8 lg:w-[80%]">
+    <section className="contact_section m-auto mt-32 p-5 md:p-8 lg:w-[80%]">
       <Section_title title={"Contact Me"} />
       <div className="contact_container mt-10 bg-gradient-to-l from-[rgba(0,25,50,0.3)] to-[rgba(0,128,128,0.3)] rounded-md">
         <div className="contact_header grid grid-cols-8 lg:gap-20 py-14 md:py-20 p-5 md:px-10 relative">
