@@ -102,7 +102,7 @@ function Header() {
         }`}
       >
         <div
-          className="menu_slider_wrapper backdrop-blur-xl bg-opacity-80 border bg-gray-800 w-3/5 sm:w-2/5 py-12 px-8 relative border-e border-solid border-white"
+          className="menu_slider_wrapper backdrop-blur-xl bg-opacity-80 bg-gray-800 w-3/5 sm:w-2/5 py-12 px-8 relative border-r border-solid border-white"
           style={{ height: "100dvh" }}
         >
           <nav>

@@ -56,7 +56,7 @@ function Hero_section() {
         </h2>
         <h2 className="text-blue-400 mb-2 xl:my-5 text-2xl sm:text-3xl xl:text-5xl flex items-center">
           {typedText}
-          <span className="ms-1 mt-1 w-1 inline-block bg-white h-[29px] sm:h-[34px] xl:h-[52px] animate-blink" /> {/* Blinking cursor */}
+          <span className="ms-1 mt-1 w-[3px] inline-block bg-white h-[29px] sm:h-[34px] xl:h-[52px] animate-blink" /> {/* Blinking cursor */}
         </h2>
         <p className="text-white mt-3 mb-5 xl:my-5 text-sm md:text-lg">
           Creating responsive and visually stunning websites that turn ideas into exceptional user experiences.
