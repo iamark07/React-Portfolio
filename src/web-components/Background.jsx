@@ -8,11 +8,13 @@ import Go_to_top_btn from './Web_sections/Go_to_top_btn/Go_to_top_btn';
 import Contact_page from './Web_pages/Contact_page';
 import About_page from './Web_pages/About_page';
 import Blog_page from './Web_pages/Blog_page';
+import Page_loader from './Web_sections/Page_loader/Page_loader';
 
 function Background() {
   return (
     <Router>
       <div className="page_bg w-100 bg-gradient-to-l from-indigo-950 to-black">
+        <Page_loader/>
         <Header />
         <Routes>
           <Route path="/" element={
