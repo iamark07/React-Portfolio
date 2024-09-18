@@ -10,6 +10,11 @@
   font-style: normal;
 }
 
+body{
+  /* overflow-x: hidden !important; */
+}
+
+
 ::selection {
   color: yellow;
 }

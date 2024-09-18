@@ -14,7 +14,7 @@ function Projects_section() {
 
   const projectsData = [
     {
-      pro_img: "src/assets/img/projects-img/restuarent-website.png",
+      pro_img: "assets/img/projects-img/restuarent-website.png",
       pro_title: "Restaurant Website",
       pro_detail: "Frontend Website",
       description:
@@ -25,7 +25,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/Restaurant-Website/",
     },
     {
-      pro_img: "src/assets/img/projects-img/Watch-e-commerce.png",
+      pro_img: "assets/img/projects-img/Watch-e-commerce.png",
       pro_title: "Watch E-Commerce Website",
       pro_detail: "Frontend Website",
       description:
@@ -36,7 +36,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/Watch-e-commerce-website/",
     },
     {
-      pro_img: "src/assets/img/projects-img/Latest-Portfolio.png",
+      pro_img: "assets/img/projects-img/Latest-Portfolio.png",
       pro_title: "Latest Portfolio",
       pro_detail: "Frontend Website",
       description:
@@ -47,7 +47,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/React-Portfolio/",
     },
     {
-      pro_img: "src/assets/img/projects-img/append-website.png",
+      pro_img: "assets/img/projects-img/append-website.png",
       pro_title: "Append Website",
       pro_detail: "Frontend Website",
       description:
@@ -58,7 +58,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/Append-Bootstrap-website/",
     },
     {
-      pro_img: "src/assets/img/projects-img/Portfolio-website.png",
+      pro_img: "assets/img/projects-img/Portfolio-website.png",
       pro_title: "Portfolio Website",
       pro_detail: "Frontend Website",
       description:
@@ -69,7 +69,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/Portfolio-Website/",
     },
     {
-      pro_img: "src/assets/img/projects-img/edukate-website.png",
+      pro_img: "assets/img/projects-img/edukate-website.png",
       pro_title: "Edukate Website",
       pro_detail: "Frontend Website",
       description:
@@ -80,7 +80,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/EDUKATE-WEBSITE/",
     },
     {
-      pro_img: "src/assets/img/projects-img/music-player.png",
+      pro_img: "assets/img/projects-img/music-player.png",
       pro_title: "Music Player",
       pro_detail: "Frontend Project",
       description:
@@ -91,7 +91,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/Music-Player/",
     },
     {
-      pro_img: "src/assets/img/projects-img/altis-website.png",
+      pro_img: "assets/img/projects-img/altis-website.png",
       pro_title: "Altis Website",
       pro_detail: "Frontend Website",
       description:
@@ -102,7 +102,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/ALTIS/",
     },
     {
-      pro_img: "src/assets/img/projects-img/New-Portfolio.png",
+      pro_img: "assets/img/projects-img/New-Portfolio.png",
       pro_title: "New Portfolio",
       pro_detail: "Frontend Website",
       description:
@@ -113,7 +113,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/New-Portfolio-Website/",
     },
     {
-      pro_img: "src/assets/img/projects-img/saraswati-school.png",
+      pro_img: "assets/img/projects-img/saraswati-school.png",
       pro_title: "Saraswati School",
       pro_detail: "Frontend Website",
       description:

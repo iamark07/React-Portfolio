@@ -77,7 +77,7 @@ function Hero_section() {
       </div>
       <div className="hero_img lg:col-span-2 hidden lg:block rounded-full overflow-hidden">
         <img
-          src="src/assets/img/hero_section_img.png"
+          src="assets/img/hero_section_img.png"
           className="w-full h-full object-cover object-center"
           alt=""
         />

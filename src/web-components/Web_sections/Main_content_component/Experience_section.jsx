@@ -13,7 +13,7 @@ function Experience_section() {
         <div className="certificate_image col-span-7 lg:col-span-3">
           <figure className="relative">
             <img
-              src="src/assets/img/innovilla-internship-certificate.jpg"
+              src="assets/img/innovilla-internship-certificate.jpg"
               alt=""
             />
             <figcaption className="absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-gradient-to-b from-black/10 to-black opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-2">

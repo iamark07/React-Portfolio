@@ -6,25 +6,25 @@ import Section_title_desc from "../Section_title_desc/Section_title_desc";
 function Blog_section() {
   const Blog_content = [
     {
-      blog_img: "src/assets/img/Blog-img/frontend-min.jpg",
+      blog_img: "assets/img/Blog-img/frontend-min.jpg",
       blog_title: "Getting Started with Frontend Development",
       blog_desc:
         "Write a beginner-friendly post explaining what frontend development is, covering basic concepts like HTML, CSS, JavaScript, and popular frameworks like React",
     },
     {
-      blog_img: "src/assets/img/Blog-img/react-min.jpg",
+      blog_img: "assets/img/Blog-img/react-min.jpg",
       blog_title: "Why React.js is the Future of Frontend Development",
       blog_desc:
         "Highlight the advantages of using React for frontend development, including its component-based architecture, virtual DOM, and ecosystem. Include some examples of projects you've built with React",
     },
     {
-      blog_img: "src/assets/img/Blog-img/responsive-min.jpg",
+      blog_img: "assets/img/Blog-img/responsive-min.jpg",
       blog_title: "Responsive Web Design: Tips and Best Practices",
       blog_desc:
         "Discuss how to create responsive websites using techniques such as media queries, flexible grids, and modern CSS frameworks like Bootstrap or Tailwind CSS.",
     },
     // {
-    //   blog_img: "src/assets/img/Blog-img/Tailwind-CSS-vs-Bootstrap-min.jpeg",
+    //   blog_img: "assets/img/Blog-img/Tailwind-CSS-vs-Bootstrap-min.jpeg",
     //   blog_title: "Tailwind CSS vs Bootstrap: Which Should You Choose?",
     //   blog_desc:
     //     "Compare the two popular CSS frameworks, discussing their pros and cons, and how to choose the right one based on the project. You can include your personal experiences with both.",

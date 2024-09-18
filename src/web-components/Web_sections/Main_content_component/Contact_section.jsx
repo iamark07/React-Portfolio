@@ -61,7 +61,7 @@ function Contact_section() {
         <div className="contact_header grid grid-cols-8 lg:gap-20 py-14 md:py-20 p-5 md:px-10 relative">
           <div className="contact_img_container hidden lg:block lg:col-span-3">
             <div className="contact_img absolute top-10 backdrop-blur-xl bg-opacity-50 border border-solid border-gray-500 bg-gray-700 rounded-lg">
-              <img src="src/assets/img/profile_pic-2.png" alt="" className="lg:w-60 xl:w-72" />
+              <img src="assets/img/profile_pic-2.png" alt="" className="lg:w-60 xl:w-72" />
             </div>
           </div>
           <div className="discuss_us col-span-8 lg:col-span-5">

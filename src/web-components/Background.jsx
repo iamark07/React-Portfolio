@@ -12,7 +12,7 @@ import Page_loader from './Web_sections/Page_loader/Page_loader';
 
 function Background() {
   return (
-    <Router>
+    <Router basename="/React-Portfolio/"> {/* Add basename */}
       <div className="page_bg w-100 bg-gradient-to-l from-indigo-950 to-black">
         <Page_loader/>
         <Header />
@@ -27,7 +27,6 @@ function Background() {
           <Route path="/About" element={<About_page />} />
           <Route path="/Blog" element={<Blog_page />} />
         </Routes>
-        {/* <Main_content /> */}
         <Footer />
         <Go_to_top_btn />
       </div>

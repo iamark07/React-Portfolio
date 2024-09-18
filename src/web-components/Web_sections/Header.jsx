@@ -65,7 +65,7 @@ function Header() {
         }`}
       >
         <div className="logo">
-          <img src="src/assets/img/logo.png" alt="" className="w-32 md:w-40" />
+          <img src="assets/img/logo.png" alt="" className="w-32 md:w-40" />
         </div>
         <nav className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
           <ul className="flex gap-5">
