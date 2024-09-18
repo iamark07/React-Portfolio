@@ -79,7 +79,7 @@ function Contact_section() {
             </div>
             <div className="contact_details">
               <h5 className="text-white text-xl">Call Me</h5>
-              <h3 className="text-white text-md">7275781669</h3>
+              <h3 className="text-white text-md"><a href="tel:7275781669">7275781669</a></h3>
             </div>
             <Social_Media />
           </div>
