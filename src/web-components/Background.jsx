@@ -9,6 +9,7 @@ import Contact_page from './Web_pages/Contact_page';
 import About_page from './Web_pages/About_page';
 import Blog_page from './Web_pages/Blog_page';
 import Page_loader from './Web_sections/Page_loader/Page_loader';
+import Cursor_pointer from './Web_sections/Cursor_pointer/Cursor_pointer';
 
 function Background() {
   return (
@@ -29,6 +30,7 @@ function Background() {
         </Routes>
         <Footer />
         <Go_to_top_btn />
+        <Cursor_pointer/>
       </div>
     </Router>
   );
