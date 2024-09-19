@@ -10,7 +10,7 @@ function Projects_Components({
   on_img_Click,
 }) {
   return (
-    <div className="projects_wrapper group p-3 rounded-md bg-slate-200 w-full md:max-w-1/2 lg:max-w-1/3 xl:min-w-96 cursor-pointer">
+    <div className="projects_wrapper group p-3 rounded-md bg-slate-200 w-full md:max-w-1/2 lg:max-w-1/3 xl:min-w-96 cursor-pointer" data-aos="fade-up">
       <figure className="relative overflow-hidden">
         <img src={pro_img} alt={pro_title} className="w-full group-hover:scale-110 transition-all duration-500"/>
         <figcaption className="absolute top-0 left-0 bg-[rgba(0,0,0,0.8)] opacity-0 pointer-events-none group-hover:opacity-100 transition-all duration-500 group-hover:pointer-events-auto flex justify-center items-center w-full h-full">

@@ -5,38 +5,34 @@ import Section_title from "./Section_title/Section_title";
 
 function Hero_section() {
   const textToType = "I'M A FRONTEND DEVELOPER";
-  const typingSpeed = 100; // Speed of typing each character
-  const delayBeforeErase = 1000; // Delay before starting to erase the text
-  const delayBeforeRestart = 500; // Delay before restarting the typing animation
+  const typingSpeed = 100;
+  const delayBeforeErase = 1000;
+  const delayBeforeRestart = 500;
 
   const [typedText, setTypedText] = useState("");
-  const [isTyping, setIsTyping] = useState(true); // Track whether typing or erasing
-  const [isErasing, setIsErasing] = useState(false); // Track whether erasing
+  const [isTyping, setIsTyping] = useState(true);
+  const [isErasing, setIsErasing] = useState(false);
 
   useEffect(() => {
     let typingTimeout;
 
     if (isTyping) {
-      // Continue typing
       if (typedText.length < textToType.length) {
         typingTimeout = setTimeout(() => {
           setTypedText((prev) => prev + textToType[prev.length]);
         }, typingSpeed);
       } else {
-        // Pause before starting to erase
         typingTimeout = setTimeout(() => {
           setIsTyping(false);
           setIsErasing(true);
         }, delayBeforeErase);
       }
     } else if (isErasing) {
-      // Continue erasing
       if (typedText.length > 0) {
         typingTimeout = setTimeout(() => {
           setTypedText((prev) => prev.slice(0, -1));
         }, typingSpeed);
       } else {
-        // Pause before restarting typing
         typingTimeout = setTimeout(() => {
           setIsErasing(false);
           setIsTyping(true);
@@ -48,8 +44,8 @@ function Hero_section() {
   }, [typedText, isTyping, isErasing]);
 
   return (
-    <section className="hero_section grid lg:grid-cols-5 px-5 lg:px-10 py-20 lg:justify-center items-center">
-      <div className="hero_text_wrapper lg:col-span-3">
+    <section className="hero_section grid lg:grid-cols-5 px-5 lg:px-10 py-20 lg:justify-center items-center w-full overflow-x-hidden">
+      <div className="hero_text_wrapper lg:col-span-3" data-aos="fade-right">
         <Section_title title="Arbaz Karimi" />
         <h2 className="text-white mt-5 mb-2 xl:my-5 text-2xl sm:text-3xl xl:text-5xl">
           HEY! I'M ARBAZ{" "}
@@ -75,7 +71,7 @@ function Hero_section() {
           </a>
         </div>
       </div>
-      <div className="hero_img lg:col-span-2 hidden lg:block rounded-full overflow-hidden">
+      <div className="hero_img lg:col-span-2 hidden lg:block rounded-full overflow-hidden" data-aos="fade-left">
         <img
           src="assets/img/hero_section_img.png"
           className="w-full h-full object-cover object-center"

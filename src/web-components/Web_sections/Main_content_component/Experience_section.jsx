@@ -6,10 +6,10 @@ import { IoTime } from "react-icons/io5";
 
 function Experience_section() {
   return (
-    <section className="experience_section mt-20 p-5 md:p-10">
-      <Section_title title={"Experience"} />
-      <Section_title_desc title_desc={"My Work Experience"} />
-      <div className="group internship_exp grid grid-cols-7 mt-10 p-5 md:p-8  bg-gradient-to-l from-cyan-950 to-cyan-800 rounded-md gap-8">
+    <section className="experience_section mt-20 p-5 md:p-10 w-full overflow-x-hidden">
+      <Section_title title={"Experience"} data={"fade-right"}/>
+      <Section_title_desc title_desc={"My Work Experience"} data={"fade-right"}/>
+      <div className="group internship_exp grid grid-cols-7 mt-10 p-5 md:p-8  bg-gradient-to-l from-cyan-950 to-cyan-800 rounded-md gap-8" data-aos="fade-left">
         <div className="certificate_image col-span-7 lg:col-span-3">
           <figure className="relative">
             <img

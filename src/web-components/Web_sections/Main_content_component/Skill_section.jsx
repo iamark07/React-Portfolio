@@ -44,9 +44,9 @@ function Skill_section() {
     ]
 
   return (
-    <section className='skill_section mt-10 p-5 md:p-8 bg-gradient-to-l from-indigo-950 to-teal-950'>
-        <Section_title title= {"Skills"}/>
-        <Section_title_desc title_desc= {"My Frontend Skills"}/>
+    <section className='skill_section mt-10 p-5 md:p-8 bg-gradient-to-l from-indigo-950 to-teal-950 w-full overflow-x-hidden'>
+        <Section_title title= {"Skills"} data={"fade-right"}/>
+        <Section_title_desc title_desc= {"My Frontend Skills"} data={"fade-right"}/>
         <div className="skills_container flex flex-wrap flex-col md:flex-row justify-center gap-8 md:gap-32 mt-10 pb-20">
             {prog_lang.map((lang, index) => (
                 <Skill_languages 

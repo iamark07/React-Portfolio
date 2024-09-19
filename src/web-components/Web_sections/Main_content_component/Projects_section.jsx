@@ -58,7 +58,7 @@ function Projects_section() {
       live_url: "https://iamark07.github.io/Append-Bootstrap-website/",
     },
     {
-      pro_img: "assets/img/projects-img/Portfolio-website.png",
+      pro_img: "assets/img/projects-img/Portfolio-Website.png",
       pro_title: "Portfolio Website",
       pro_detail: "Frontend Website",
       description:
@@ -173,9 +173,9 @@ function Projects_section() {
   };
 
   return (
-    <section className="Projects_section py-20 px-5 md:px-10 w-100 bg-gradient-to-l from-indigo-950 to-teal-950">
-      <Section_title title={"My Projects"} />
-      <Section_title_desc title_desc= {"Recent Projects"}/>
+    <section className="Projects_section py-20 px-5 md:px-10 w-100 bg-gradient-to-l from-indigo-950 to-teal-950  w-full overflow-x-hidden">
+      <Section_title title={"My Projects"} data={"fade-right"}/>
+      <Section_title_desc title_desc= {"Recent Projects"} data={"fade-right"}/>
 
       {/* React Slick Carousel */}
       <Slider {...settings} className="projects_container mt-10">

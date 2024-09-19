@@ -31,9 +31,9 @@ function Blog_section() {
     // }
   ];
   return (
-    <section className="blog_section mt-32 px-5 md:px-10">
-      <Section_title title={"Blogs"} />
-      <Section_title_desc title_desc= {"Exploring Frontend"}/>
+    <section className="blog_section mt-32 px-5 md:px-10 w-full overflow-x-hidden">
+      <Section_title title={"Blogs"} data={"fade-right"}/>
+      <Section_title_desc title_desc= {"Exploring Frontend"} data={"fade-right"}/>
       <div className="blog_container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5 mt-14">
         {Blog_content.map((blog, index) => (
           <Blog_card

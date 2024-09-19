@@ -5,13 +5,13 @@ import Btn from "../Btn_component/Btn";
 
 function About_section() {
   return (
-    <section className="about_section py-32 md:py-44">
+    <section className="about_section py-32 md:py-44 w-full overflow-x-hidden">
       <div className="about_container grid grid-cols-8 xl:grid-cols-7 gap-10 px-5 md:px-10">
-        <div className="about_img col-span-8 lg:col-span-4 xl:col-span-3 flex justify-center backdrop-blur-xl bg-opacity-50 border border-solid border-gray-500 bg-gray-700 rounded-lg">
+        <div className="about_img col-span-8 lg:col-span-4 xl:col-span-3 flex justify-center backdrop-blur-xl bg-opacity-50 border border-solid border-gray-500 bg-gray-700 rounded-lg" data-aos="fade-right">
           <img src="assets/img/profile_pic-2.png" alt="" />
         </div>
 
-        <div className="about_content_container col-span-8 lg:col-span-4">
+        <div className="about_content_container col-span-8 lg:col-span-4"  data-aos="fade-left">
           <Section_title title="About Section" />
           <h2 className="mt-5 text-white text-2xl md:text-4xl">
             I'M AVAILABLE FOR{" "}
