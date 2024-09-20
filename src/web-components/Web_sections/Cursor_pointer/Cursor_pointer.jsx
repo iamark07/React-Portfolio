@@ -21,7 +21,7 @@ function Cursor_pointer() {
 
   return (
     <div
-      className="cursor w-9 h-9 border border-solid border-blue-400 rounded-full z-30 fixed flex items-center justify-center pointer-events-none"
+      className="hidden cursor w-9 h-9 border border-solid border-blue-400 rounded-full z-30 fixed lg:flex items-center justify-center pointer-events-none"
       style={{
         top: mousePosition.y - 20 + 'px',  // Offset to center the cursor
         left: mousePosition.x - 20 + 'px', // Offset to center the cursor
