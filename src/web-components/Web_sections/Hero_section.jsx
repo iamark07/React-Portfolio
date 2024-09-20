@@ -61,7 +61,7 @@ function Hero_section() {
         <div className="hero_btn flex gap-3">
           <Btn btn={"Get In Touch"} link="/Contact" />
           <a
-            href="src/assets/resume/Arbaz-Karimi-resume.pdf"
+            href="assets/resume/Arbaz-Karimi-resume.pdf"
             target="_blank"
             className="my-5"
           >
