@@ -13,7 +13,6 @@ function Cursor_pointer() {
 
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Clean up the event listener on unmount
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
     };
